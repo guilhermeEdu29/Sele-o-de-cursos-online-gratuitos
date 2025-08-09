@@ -1,0 +1,122 @@
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Fundo com imagem */
+body {
+    background: url('image.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Overlay azul escuro translúcido */
+.overlay {
+    background-color: rgba(0, 0, 50, 0.6);
+    width: 100%;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #ccc;
+}
+
+/* Container dos cursos */
+.courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cards dos cursos */
+.course-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.course-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.course-card p {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+    color: #ddd;
+}
+
+/* Botão */
+.course-card a {
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.course-card a:hover {
+    background-color: #0056b3;
+}
+
+<!-- estilo da caixa de pesquisa>
+
+.search-containe{
+    display: flex;
+    align-items: center;
+    border: 1px solide #dbe5fb;
+    border-radius: 5px;
+    padding:5px;
+}
+#search-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+#search-button {
+  background-color: #4bd8ff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,62 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo com imagem */
+body {
+    background: url('img.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Overlay para suavizar imagem */
+.overlay {
+    background-color: rgba(0, 0, 50, 0.5); /* azul escuro transparente */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteúdo central */
+.content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+/* Botão estilizado */
+button {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
